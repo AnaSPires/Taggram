@@ -1,0 +1,156 @@
+.body {
+  background-color: #FAFAFA;
+}
+
+.header {
+  background-color: #FFF;
+  border-bottom: 1px solid #DBDBDB;
+}
+
+.header__container {
+  display: flex;
+  max-width: 933px;
+  margin: 0 auto;
+  
+}
+
+
+.current-user {
+  margin-left: auto;
+  padding: 15px 0 16px;
+  display: flex;
+  align-items: center;
+}
+
+.current-user__username {
+  color: #262626;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  margin-right: 12px;
+}
+
+.current-user__avatar {
+  height: 22px;
+  width: 22px;
+  background-color: #DBDBDB;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.taggram {
+position: absolute;
+width: 82px;
+height: 29px;
+left: 108px;
+top: 15px;
+
+}
+.centraliza{
+  align-items: center;
+  align-self: center;
+  align-content: center;
+  margin: 0 auto;
+  width: 933px;
+  height: 598px;
+}
+
+.post{
+  position: absolute;
+  width: 933px;
+  height: 598px;
+  align-self: center;
+  top: 74px;
+  overflow: auto;
+  background: #FFFFFF;
+  border: 1px solid #DBDBDB;
+  border-radius: 3px;
+}
+
+.photo{
+  position: absolute;
+  width: 598px;
+  height: 598px;
+  left: 0px;
+  top: 0px;
+
+  border-right: 1px solid #EFEFEF;
+}
+
+
+.header__post{
+  position: absolute;
+  width: 330px;
+  height: 73px;
+  left: 599px;
+  top: 0px;
+
+  background: #FFFFFF;
+  border-bottom: 1px solid #DBDBDB;
+}
+
+.author__avatar
+{
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  left: 16px;
+  bottom: 21px;
+  top:20px;
+
+  border-radius: 32px;
+}
+
+.author__username
+{
+  position: relative;
+  width: 200px;
+  height: 14px;
+  left: 64px;
+  right: 64px;
+  bottom: 36px;
+  top:19px;
+
+  font-family: Arial;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
+  /* identical to box height, or 129% */
+
+
+  color: #262626;
+}
+
+.author__info{
+  position: relative;
+  width: 200px;
+  height: 15px;
+  left: 64px;
+  right: 64px;
+  bottom: 19px;
+  top:29px;
+
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  /* identical to box height, or 125% */
+
+
+  color: #262626;
+
+}
+
+.footer{
+  position: absolute;
+  margin-bottom: auto;
+  height: 117px;
+  width: 320px;
+  left: 599px;
+  top: 481px;
+  border-top: 1px solid #EFEFEF;
+  background: #FFFFFF;
+}
