@@ -26,9 +26,47 @@
             const $avatar = document.getElementById("author-avatar");
             const $username = document.getElementById("author-username");
             const $info = document.getElementById("author-info");
+            const $qtd_comentarios = document.getElementById("qtd-comentarios");
+            const $data = document.getElementById("data");
+            const $comments = document.getElementById("comment-list");
 
             const location = post.location;
-            $info.innerHTML = location.city+", "+location.country; 
+            $info.innerHTML = location.city+", "+location.country;
+
+            const comments = post.comments;
+            $qtd_comentarios.innerHTML = comments.length + " comentários";
+
+            var month = ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"];
+  
+             const datac= new Date(post.created_at); 
+             $data.innerHTML = datac.getDate() + " de " + month[datac.getMonth()] ;
+            
+             var html = '';
+             var altura = 0;
+             const data_atual = new Date().getHours();
+             var horas_comment;
+
+             for(var i = 0; i<comments.length; i++)
+             {
+               const comment = comments[i];
+               horas_comment = data_atual - new Date(comment.created_at).getHours();
+
+              html +='<div class="comment" id="comment">'+
+              '<div class="comment__info" "><b>'+
+              comment.user.username+'</b>'+' '+comment.message+'</div>'+
+              '<div class="comment__avatar" ">'+
+                '<img src="'+comment.user.avatar+'" class="img_comment">'+
+              '</div>'+'<div class="comment__time"">'+
+                horas_comment+'h'+
+            '</div>'+
+            '</div>';
+              
+            
+              //altura = document.getElementById("comment")
+             }
+
+             $comments.innerHTML = html;
+             
 
             const user = post.user;
             $username.innerHTML = user.username;
@@ -41,6 +79,8 @@
             if (user.avatar) {
               $avatar.style.backgroundImage = "url('" + post.photo + "')";
             }
+
+            
           });
         }
 

@@ -62,10 +62,14 @@ top: 15px;
   height: 598px;
   align-self: center;
   top: 74px;
-  overflow: auto;
   background: #FFFFFF;
   border: 1px solid #DBDBDB;
   border-radius: 3px;
+}
+
+.canto_direito{
+  position: relative;
+  left: 598px;;
 }
 
 .photo{
@@ -83,7 +87,6 @@ top: 15px;
   position: absolute;
   width: 330px;
   height: 73px;
-  left: 599px;
   top: 0px;
 
   background: #FFFFFF;
@@ -145,12 +148,167 @@ top: 15px;
 }
 
 .footer{
-  position: absolute;
+  position: relative;
+  top:81px;
   margin-bottom: auto;
-  height: 117px;
+  margin-right: 12px;
   width: 320px;
-  left: 599px;
-  top: 481px;
   border-top: 1px solid #EFEFEF;
   background: #FFFFFF;
 }
+
+.qtd__comentarios
+{
+  /* 25 comentários */
+
+position: absolute;
+width: 103px;
+height: 18px;
+left: 16px;
+top: 13px;
+
+font-family: Arial;
+font-style: normal;
+font-weight: bold;
+font-size: 14px;
+line-height: 18px;
+/* identical to box height, or 129% */
+
+color: #262626;
+
+}
+
+.data{
+  /* 9 de outubro */
+
+position: absolute;
+height: 18px;
+left: 16px;
+top: 35px;
+
+font-family: Arial;
+font-style: normal;
+font-weight: normal;
+font-size: 10px;
+line-height: 18px;
+/* identical to box height, or 180% */
+text-transform: uppercase;
+
+color: #8E8E8E;
+
+
+}
+
+.statistics
+{
+  /* statistics */
+  border-bottom: 1px solid #EFEFEF;
+  height: 61px;
+
+}
+
+.comment{
+  /* Howard28 Use the bluetooth CSS bus */
+
+position: relative;
+height: fit-content;
+width: 252px;
+padding-top:12px;
+padding-bottom: 32px;
+
+font-family: Arial;
+font-style: normal;
+font-size: 14px;
+line-height: 18px;
+/* identical to box height, or 129% */
+
+color: #262626;
+
+
+}
+
+.comment__list{
+  position: relative;
+  padding-right: 12px;
+  width: 334px;
+  height: 406px;
+  top: 77px;
+  overflow: auto;
+}
+
+.comment__info{
+position: relative;
+width: 252px;
+height: fit-content;
+left: 66px;
+
+
+font-family: Arial;
+font-style: normal;
+font-size: 14px;
+line-height: 18px;
+/* identical to box height, or 129% */
+
+
+color: #262626;
+
+}
+
+.comment__time{
+  /* 6h */
+
+position: relative;
+height: fit-content;
+left: 66px;
+top: 16px;
+
+font-family: Arial;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 18px;
+/* identical to box height, or 129% */
+
+color: #8E8E8E;
+
+
+} 
+
+  .img_comment{
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    left: 16px;
+    top: 12px;
+    border-radius: 32px;
+  }
+  .field{
+    position: relative;
+    margin-right: 20px;
+    height: auto;
+  }
+  .lcomment{
+    position: relative;
+    margin-top: auto;
+    width: 100%;
+    height: auto;
+    left: 16px;
+    
+
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    border: none;
+    /* identical to box height, or 129% */
+
+
+    color: #262626;
+  }
+
+  .button{
+    position: relative;
+    background-color: transparent;
+    top: 20px;
+    z-index: 3;
+  }
