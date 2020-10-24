@@ -70,6 +70,7 @@ top: 15px;
 .canto_direito{
   position: relative;
   left: 598px;;
+  width: fit-content;
 }
 
 .photo{
@@ -149,7 +150,7 @@ top: 15px;
 
 .footer{
   position: relative;
-  top:81px;
+  top:71px;
   margin-bottom: auto;
   margin-right: 12px;
   width: 320px;
@@ -285,12 +286,16 @@ color: #8E8E8E;
   .field{
     position: relative;
     margin-right: 20px;
-    height: auto;
+    margin-right: 20px;
+    height: 20px;
   }
   .lcomment{
     position: relative;
-    margin-top: auto;
-    width: 100%;
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-bottom: 5px;
+    padding-right: 50px;
+    width: 80%;
     height: auto;
     left: 16px;
     
@@ -309,6 +314,19 @@ color: #8E8E8E;
   .button{
     position: relative;
     background-color: transparent;
-    top: 20px;
+    top: -40px;
+    left:260px;
     z-index: 3;
+    border:transparent;
+    font-family: Arial;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 18px;
+    /* identical to box height, or 129% */
+
+    text-align: right;
+
+    color: #0095F6;
+
   }
